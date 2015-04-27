@@ -44,3 +44,37 @@ Once the project moves into development, the press release can be used as a touc
   > Wrap it up and give pointers where the reader should go next.
 
 
+Title: 
+ADVANCE!
+
+Sub-Heading: 
+A game meant for everyone where there's only one objective: ADVANCE!
+
+Summary: 
+Brought to you by the developers here at ADVANCE studios, this game
+offers one or two individuals the lightning fast pace of 2-dimensional
+warfare. Experience the excitement of taking out enemies while dodging
+their projectiles. Whether you're out for a casual game or looking to 
+prove your skills on the international stage, this game was made for you. 
+
+Proglem: 
+A lack of excitement in day-to-day life.
+
+Solution:
+Cutting edge gameplay paired with split-second decisions. 
+
+Quote from me: 
+Love it. Ten out of ten would play again. 
+
+How to get started: 
+Go on the site, pick up the controls. Get going!
+
+Customer quote:
+"I was always getting into car accidents. Literally every week. Since I 
+got into ADVANCE! I haven't had an accident for over a month. It really 
+taught me a lot about keeping track of multiple cars while driving. 
+Thanks for everything, ADVANCE!"
+
+Closing and call to action: 
+You're gonna love it. Tell your friends, families, enemies, estranged. 
+Tell everybody. 
