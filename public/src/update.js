@@ -47,13 +47,11 @@ function update() {
       check--;
     }
 
-    if (cursors.up.isDown && player.body.touching.down)
-    {
+    if (cursors.up.isDown){
+      if (player.body.touching.down){
+        check = 100;        
         player.body.velocity.y = -250;
-    }
-
-    if (player.body.touching.down){
-      var check = 10;
+      }
     }
 
 }
