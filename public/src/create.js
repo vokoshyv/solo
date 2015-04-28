@@ -22,18 +22,19 @@ function create() {
     ground.body.immovable = true;
 
   // Now let's create ledges
-    var xVals = [200, 300, 400, 500, 200, 300, 400, 500, 0, 700];
-    var yVals = [200, 200, 200, 200, 500, 500, 500, 500, 350, 350];
+    var xVals = [0, 1, 6, 7, 3.5, 2, 5, 2, 3, 4, 5, 0, 7, 3.5];
+    var yVals = [1, 1, 1, 1, 2, 3, 3, 5, 5, 5, 5, 4, 4, 4];
+
     var ledgeCreate = function(x, y){
       for (var i = 0; i < x.length; i++){
-        ledge = platforms.create(x[i], y[i], 'ground100');
+        ledge = platforms.create(x[i] * 100, y[i] * 100, 'ground100');
         ledge.body.immovable = true;; 
       }
     }(xVals, yVals);
 
   //player creation time
     // The player and its settings
-    player = game.add.sprite(100, game.world.height - 500, 'dude');
+    player = game.add.sprite(400, 180, 'dude');
 
     //  We need to enable physics on the player
     game.physics.arcade.enable(player);
@@ -51,20 +52,5 @@ function create() {
 
     // Ring creation
       ring = game.add.sprite()
-  //ring creation
-    // rings = game.add.group();
-
-    // rings.enableBody = true;
-    // rings.physicsBodyType = Phaser.Physics.ARCADE;
-    // rings.collideWorldBounds = true;
-
-    // for (var i = 0; i < 30; i++){
-    //   var ring = rings.create(i*30, 0, 'ring');
-    //   ring.body.gravity.y = 6;
-    //   ring.body.bounce.y = 0.7 + Math.random() * 0.2;
-    // }
-
-  // //score
-  //   scoreText = game.add.text(16, 16, 'score: 0', {fontSize: '32px', fill: '#000'});
 
 }
