@@ -22,8 +22,8 @@ function create() {
     ground.body.immovable = true;
 
   // Now let's create ledges
-    var xVals = [0, 1, 6, 7, 3.5, 2, 5, 2, 3, 4, 5, 0, 7, 3.5];
-    var yVals = [1, 1, 1, 1, 2, 3, 3, 5, 5, 5, 5, 4, 4, 4];
+    var xVals = [0, 7, 3.5, 2, 5, 2, 3, 4, 5, 0, 7, 3.5];
+    var yVals = [1, 1, 2, 3, 3, 5, 5, 5, 5, 4, 4, 4];
 
     var ledgeCreate = function(x, y){
       for (var i = 0; i < x.length; i++){

@@ -41,7 +41,7 @@ function update() {
         player.frame = 0;
     }
 
-    //  Allow the player to jump if they are touching the ground.
+     // Allow the player to jump if they are touching the ground.
     if (cursors.up.isDown && check > 0){
       player.body.velocity.y = -250;
       check--;
@@ -49,7 +49,7 @@ function update() {
 
     if (cursors.up.isDown){
       if (player.body.touching.down){
-        check = 100;        
+        check = 10;        
         player.body.velocity.y = -250;
       }
     }
