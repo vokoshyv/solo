@@ -1,8 +1,8 @@
 {
-  "name": "2015-03-solo",
+  "name": "soloMVP",
   "version": "0.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "test": "karma start --browsers PhantomJS"
   },

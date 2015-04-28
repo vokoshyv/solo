@@ -3,8 +3,8 @@ var express = require('express');
 
 // var io = require('socket.io')(app);
 
-// var port = (process.env.PORT)? process.env.PORT : 0000;
-var port = 8000;
+var port = (process.env.PORT)? process.env.PORT : 0000;
+// var port = 8000;
 
 app.listen(port, function(){
   console.log('Listening to port ', port);
