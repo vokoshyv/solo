@@ -26,7 +26,7 @@ function create() {
     ledge.body.immovable = true;
     ledge = platforms.create(-150, 250, 'ground');
     ledge.body.immovable = true;
-    ledge = platforms.create(500, 200, 'ground');
+    ledge = platforms.create(50, 200, 'ground');
     ledge.body.immovable = true;
 
   //player creation time
@@ -54,8 +54,8 @@ function create() {
     stars.physicsBodyType = Phaser.Physics.ARCADE;
     stars.collideWorldBounds = true;
 
-    for (var i = 0; i < 12; i++){
-      var star = stars.create(i*70, 0, 'star');
+    for (var i = 0; i < 30; i++){
+      var star = stars.create(i*30, 0, 'star');
       star.body.gravity.y = 6;
       star.body.bounce.y = 0.7 + Math.random() * 0.2;
     }
