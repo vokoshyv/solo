@@ -1,12 +1,12 @@
 function update() {
   game.physics.arcade.collide(player, platforms);
-  game.physics.arcade.collide(stars, platforms);
-  game.physics.arcade.overlap(player, stars, collectStar, null, this);
-  function collectStar(player, star){
-    star.kill();
-    score += 10;
-    scoreText.text = 'Score: ' + score;
-  }
+  // game.physics.arcade.collide(rings, platforms);
+  // game.physics.arcade.overlap(player, rings, collectStar, null, this);
+  // function collectStar(player, ring){
+  //   ring.kill();
+  //   score += 10;
+  //   scoreText.text = 'Score: ' + score;
+  // }
 
 
   var cursors = game.input.keyboard.createCursorKeys();
@@ -51,7 +51,7 @@ function update() {
     //  Allow the player to jump if they are touching the ground.
     if (cursors.up.isDown && player.body.touching.down)
     {
-        player.body.velocity.y = -350;
+        player.body.velocity.y = -300;
     }
 
 }

@@ -13,7 +13,7 @@ function create() {
     platforms.enableBody = true;
 
   // Here we create the ground.
-    var ground = platforms.create(0, game.world.height - 30, 'ground');
+    var ground = platforms.create(0, game.world.height - 30, 'groundLarge');
 
     //  Scale it to fit the width of the game (the original sprite is 400x32 in size)
     ground.scale.setTo(2, 2);
@@ -21,13 +21,15 @@ function create() {
     //  This stops it from falling away when you jump on it
     ground.body.immovable = true;
 
-  // Now let's create two ledges
-    var ledge = platforms.create(400, 400, 'ground');
-    ledge.body.immovable = true;
-    ledge = platforms.create(-150, 250, 'ground');
-    ledge.body.immovable = true;
-    ledge = platforms.create(50, 200, 'ground');
-    ledge.body.immovable = true;
+  // Now let's create ledges
+    var xVals = [200, 300, 400, 500, 200, 300, 400, 500, 0, 700];
+    var yVals = [200, 200, 200, 200, 500, 500, 500, 500, 350, 350];
+    var ledgeCreate = function(x, y){
+      for (var i = 0; i < x.length; i++){
+        ledge = platforms.create(x[i], y[i], 'ground100');
+        ledge.body.immovable = true;; 
+      }
+    }(xVals, yVals);
 
   //player creation time
     // The player and its settings
@@ -47,20 +49,22 @@ function create() {
     player.animations.add('jump', [26], 10, true);
     player.anchor.setTo(.5);
 
-  //star creation
-    stars = game.add.group();
+    // Ring creation
+      ring = game.add.sprite()
+  //ring creation
+    // rings = game.add.group();
 
-    stars.enableBody = true;
-    stars.physicsBodyType = Phaser.Physics.ARCADE;
-    stars.collideWorldBounds = true;
+    // rings.enableBody = true;
+    // rings.physicsBodyType = Phaser.Physics.ARCADE;
+    // rings.collideWorldBounds = true;
 
-    for (var i = 0; i < 30; i++){
-      var star = stars.create(i*30, 0, 'star');
-      star.body.gravity.y = 6;
-      star.body.bounce.y = 0.7 + Math.random() * 0.2;
-    }
+    // for (var i = 0; i < 30; i++){
+    //   var ring = rings.create(i*30, 0, 'ring');
+    //   ring.body.gravity.y = 6;
+    //   ring.body.bounce.y = 0.7 + Math.random() * 0.2;
+    // }
 
-  //score
-    scoreText = game.add.text(16, 16, 'score: 0', {fontSize: '32px', fill: '#000'});
+  // //score
+  //   scoreText = game.add.text(16, 16, 'score: 0', {fontSize: '32px', fill: '#000'});
 
 }
