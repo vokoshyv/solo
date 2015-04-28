@@ -134,6 +134,9 @@ function update() {
           player.animations.play('right');
         }
     }
+    else if (!player.body.touching.down){
+      player.animations.play('jump');
+    }
     else
     {
         //  Stand still
