@@ -2,7 +2,7 @@ function create() {
 
   // center the page in the middle of the game
     // this.game.scale.pageAlignHorizontally = true;
-    this.game.scale.pageAlignVertically = true;
+    // this.game.scale.pageAlignVertically = true;
     this.game.scale.refresh();
 
   // enable arcade physics engine
