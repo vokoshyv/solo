@@ -23,8 +23,8 @@ io.on('disconnect', function(){
 //   console.log('listening on *: 3000');
 // });
 
-// var port = (process.env.PORT)? process.env.PORT : 0000;
-var port = 8000;
+var port = (process.env.PORT)? process.env.PORT : 0000;
+// var port = 8000;
 
 app.listen(port, function(){
   console.log('Listening to port ', port);
